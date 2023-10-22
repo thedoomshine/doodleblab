@@ -12,19 +12,19 @@
     "db:push": "pnpm -F db push",
     "db:studio": "pnpm -F db studio",
     "dev": "turbo dev --parallel",
-    "format": "turbo format --continue -- --cache --cache-location='node_modules/.cache/.prettiercache'",
-    "format:fix": "turbo format --continue -- --write --cache --cache-location='node_modules/.cache/.prettiercache'",
-    "lint": "turbo lint --continue -- --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg check",
-    "lint:fix": "turbo lint --continue -- --fix --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg fix",
+    "prettier": "turbo prettier --continue -- --cache --cache-location='node_modules/.cache/.prettiercache'",
+    "prettier:fix": "turbo prettier --continue -- --write --cache --cache-location='node_modules/.cache/.prettiercache'",
+    "eslint": "turbo eslint --continue -- --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg check",
+    "eslint:fix": "turbo eslint --continue -- --fix --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg fix",
     "typecheck": "turbo typecheck"
   },
   "dependencies": {
-    "@acme/prettier-config": "^0.1.0",
+    "@doodleblab/prettier-config": "^0.1.0",
     "@manypkg/cli": "^0.21.0",
-    "@turbo/gen": "^1.10.15",
+    "@turbo/gen": "^1.10.16",
     "prettier": "^3.0.3",
-    "turbo": "^1.10.15",
+    "turbo": "^1.10.16",
     "typescript": "^5.2.2"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@doodleblab/prettier-config"
 }

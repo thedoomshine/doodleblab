@@ -14,6 +14,7 @@ const config = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: true,
+    include: ["vite.config.ts"],
   },
   plugins: ["@typescript-eslint", "import"],
   rules: {

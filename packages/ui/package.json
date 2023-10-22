@@ -1,0 +1,55 @@
+{
+  "name": "@doodleblab/ui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --p ./tsconfig.build.json && vite build",
+    "eslint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@builder.io/mitosis": "^0.0.120",
+    "@doodleblab/eslint-config": "^0.2.0",
+    "@doodleblab/prettier-config": "^0.1.0",
+    "@doodleblab/tsconfig": "^0.1.0",
+    "@types/node": "^18.17.19",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.10",
+    "@vitejs/plugin-react": "^4.0.3",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.50.0",
+    "lightningcss": "^1.22.0",
+    "prettier": "^3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.3",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "plugins": [
+      "@builder.io/mitosis"
+    ],
+    "rules": {
+      "@builder.io/mitosis/css-no-vars": "error"
+    },
+    "extends": [
+      "plugin:@builder.io/mitosis/recommended",
+      "@doodleblab/eslint-config/base",
+      "@doodleblab/eslint-config/react"
+    ]
+  },
+  "prettier": "@doodleblab/prettier-config"
+}

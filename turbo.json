@@ -13,11 +13,11 @@
       "persistent": true,
       "cache": false
     },
-    "format": {
+    "prettier": {
       "outputs": ["node_modules/.cache/.prettiercache"],
       "outputMode": "new-only"
     },
-    "lint": {
+    "eslint": {
       "dependsOn": ["^topo"],
       "outputs": ["node_modules/.cache/.eslintcache"]
     },

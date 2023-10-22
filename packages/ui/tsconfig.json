@@ -1,8 +1,8 @@
 {
-  "extends": "@acme/tsconfig/base.json",
+  "extends": "@doodleblab/tsconfig/base.json",
   "compilerOptions": {
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
-  "include": ["."],
+  "include": ["src", "lib", "public", "vite.config.ts"],
   "exclude": ["node_modules"]
 }

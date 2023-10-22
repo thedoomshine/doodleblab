@@ -18,5 +18,9 @@
     "incremental": true,
     "noUncheckedIndexedAccess": true
   },
+  "parserOptions": {
+    "include": ["vite.config.ts"]
+  },
+  "include": ["vite.config.ts"],
   "exclude": ["node_modules", "build", "dist", ".next", ".expo"]
 }
